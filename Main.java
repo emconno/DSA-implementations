@@ -1,3 +1,10 @@
+import LinkedLists.LinkedList;
+import Trees.BinarySearchTree;
+
+/**
+ * A class to test the functionality of data structure/algorithm implementations.
+ * @author Emmett Connolly
+ */
 public class Main {
 
     public static void printArr (int[] arr) {
@@ -26,6 +33,48 @@ public class Main {
         System.out.println("Binary search for 7: " + AlgorithmUtils.binarySearch(testArr, 7));
         System.out.println("Binary search for 22: " + AlgorithmUtils.binarySearch(testArr, 22));
         System.out.println("Binary search for 99: " + AlgorithmUtils.binarySearch(testArr, 99));
+
+
+
+        System.out.println("\n\nLINKED LIST TESTING\n");
+
+        LinkedList list = new LinkedList();
+        list.addToTail("green");
+        list.addToTail("blue");
+        list.addToTail("magenta");
+        list.addToTail("yellow");
+        list.addToTail("cyan");
+        System.out.println("Linked List:");
+        System.out.println(list.toString());
+
+        list.addToHead("red");
+        System.out.println("\nLinked List (after adding 'red' to head):");
+        System.out.println(list.toString());
+
+        list.remove("blue");
+        System.out.println("\nLinked List (after removing 'blue'):");
+        System.out.println(list.toString());
+
+        list.swap("green", "cyan");
+        System.out.println("\nLinked List (after swaping 'green' and 'cyan'):");
+        System.out.println(list.toString());
+    
+        list.swap("red", "cyan");
+        System.out.println("\nLinked List (after swaping 'red' and 'cyan'):");
+        System.out.println(list.toString());
+
+        System.out.println("\nAttempting to swap 'red' and 'orange':");
+        list.swap("red", "orange");
+        System.out.println(list.toString());
+
+        list.reverse();
+        System.out.println("\nReversed Linked List:");
+        System.out.println(list.toString());
+
+
+
+        BinarySearchTree bst = new BinarySearchTree();
+
 
     }
 }
