@@ -72,8 +72,25 @@ public class Main {
         System.out.println(list.toString());
 
 
+        BinarySearchTree root = new BinarySearchTree(37);
+        root.insert(4);     root.insert(7);     root.insert(12);
+        root.insert(99);    root.insert(34);    root.insert(14);
+        root.insert(0);     root.insert(16);    root.insert(22);
+        root.insert(78);    root.insert(77);    root.insert(2);
+        root.insert(12);    root.insert(55);
 
-        BinarySearchTree bst = new BinarySearchTree();
+        System.out.println("\n\nBINARY SEARCH TREE TESTING");
+
+        System.out.print("\nBST inorder traversal: ");
+        root.depthFirstTraversal();
+
+        System.out.println("\n\nDoes the tree contain 0?");
+        System.out.println("Non-recursive test: " + root.contains(0));
+        System.out.println("Recursive test: " + root.containsRecursive(0));
+
+        System.out.println("\nDoes the tree contain 15?");
+        System.out.println("Non-recursive test: " + root.contains(15));
+        System.out.println("Recursive test: " + root.containsRecursive(15));
 
 
     }

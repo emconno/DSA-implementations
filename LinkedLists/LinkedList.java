@@ -28,7 +28,7 @@ public class LinkedList {
     public void addToHead(String data) {
         Node newHead = new Node(data);
         Node oldHead = this.head;
-        if (oldHead.data != null) {
+        if (oldHead != null) {
             newHead.setNext(oldHead);
         }
         this.head = newHead;
