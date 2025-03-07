@@ -4,9 +4,11 @@ Implementing and testing data structures and algorithms in java
 ## Features
 - **Data Scructure Implementations**
   - Linked List
+  - Queue (to be added)
+  - Stack (to be added)
   - Hash Map (to be added)
   - Tree (to be added)
-  - Binary Search Tree (to be added)
+  - Binary Search Tree
   - Heap (to be added)
 - **Algorithms**
   - Binary Search
