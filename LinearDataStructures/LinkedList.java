@@ -1,4 +1,4 @@
-package LinkedLists;
+package LinearDataStructures;
 /**
  * A class implementing a singly-linked list data structure
  * @author Emmett Connolly
@@ -57,11 +57,13 @@ public class LinkedList {
     /**
      * Removes the head of the list.
      */
-    public void removeHead() {
+    public String removeHead() {
         if (this.head == null) {
-            return;
+            return null;
         }
+        Node oldHead = this.head;
         this.head = this.head.getNext();
+        return oldHead.data;
 
     }
 
