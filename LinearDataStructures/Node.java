@@ -1,4 +1,4 @@
-package LinkedLists;
+package LinearDataStructures;
 /**
  * A class implementing the node data structure used for singly-linked lists. Only String data is accepted.
  * @author Emmett Connolly

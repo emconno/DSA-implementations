@@ -1,4 +1,4 @@
-import LinkedLists.LinkedList;
+import LinearDataStructures.*;
 import Trees.BinarySearchTree;
 
 /**
@@ -70,6 +70,36 @@ public class Main {
         list.reverse();
         System.out.println("\nReversed Linked List:");
         System.out.println(list.toString());
+
+
+
+        System.out.println("\n\nQUEUE TESTING\n");
+
+        Queue queue = new Queue();
+        queue.enqueue("one");
+        queue.enqueue("two");
+        queue.enqueue("three");
+        System.out.println("Size: " + queue.size);
+        System.out.println("Test peek: " + queue.peek());
+        System.out.println("Test dequeue: " + queue.dequeue());
+        System.out.println("Test dequeue: " + queue.dequeue());
+        System.out.println("Test dequeue: " + queue.dequeue());
+        System.out.println("Test dequeue: " + queue.dequeue());
+
+
+        System.out.println("\n\nSTACK TESTING\n");
+
+        Stack stack = new Stack();
+        stack.push("one");
+        stack.push("two");
+        stack.push("three");
+        System.out.println("Size: " + stack.size);
+        System.out.println("Test peek: " + stack.peek());
+        System.out.println("Test pop: " + stack.pop());
+        System.out.println("Test pop: " + stack.pop());
+        System.out.println("Test pop: " + stack.pop());
+        System.out.println("Test pop: " + stack.pop());
+
 
 
         BinarySearchTree root = new BinarySearchTree(37);
