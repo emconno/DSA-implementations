@@ -48,6 +48,14 @@ public class LeetCode {
         return 0;
     }
 
+    public int nthFibonacci() {
+
+    }
+
+    public int nthFactorial() {
+        
+    }
+
     public static void main(String[] args) {
         
     }
