@@ -29,6 +29,18 @@ public class Main {
         AlgorithmUtils.insertionSort(testArr);
         printArr(testArr);
 
+        testArr = new int[] {4, 7, 12, 99, 34, 14, 0, 16, 22, 78, 77, 2, 12, 55, 37};
+        
+        System.out.println("\nOrigional array:");
+        printArr(testArr);
+
+        System.out.println("\nSorted array (merge sort):");
+        int[] mergeSorted = AlgorithmUtils.mergeSort(testArr);
+        printArr(mergeSorted);
+
+        //remove once you implement merge sort without array copying
+        testArr = mergeSorted;
+
         System.out.println();
         System.out.println("Binary search for 7: " + AlgorithmUtils.binarySearch(testArr, 7));
         System.out.println("Binary search for 22: " + AlgorithmUtils.binarySearch(testArr, 22));
