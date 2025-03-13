@@ -13,8 +13,9 @@ Implementing and testing data structures and algorithms in java
 - **Algorithms**
   - Binary Search
   - Insertion Sort
-  - Merge Sort (to be added)
+  - Merge Sort
   - Quicksort (to be added)
+  - Heapsort (to be added)
   - Graph Algorithms
       - BSF (to be added)
       - DSF (to be added)
