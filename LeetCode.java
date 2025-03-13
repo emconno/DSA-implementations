@@ -48,6 +48,7 @@ public class LeetCode {
         return 0;
     }
 
+    //bad approach - learn memoization
     public static int nthFibonacci(int n) {
         //assuming the first number in the sequence is 1 (0 returns 0)
         if (n < 2) {
@@ -58,7 +59,7 @@ public class LeetCode {
 
     }
 
-    public static int nFactorial(int n) {
+    public static double nFactorial(int n) {
         if (n < 3) {
             return n;
         }
@@ -68,6 +69,6 @@ public class LeetCode {
 
     public static void main(String[] args) {
         System.out.println(nthFibonacci(21));
-        System.out.println(nFactorial(3));
+        System.out.println(nFactorial(7));
     }
 }
