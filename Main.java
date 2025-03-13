@@ -1,3 +1,4 @@
+import Heaps.*;
 import LinearDataStructures.*;
 import Trees.BinarySearchTree;
 
@@ -134,6 +135,18 @@ public class Main {
         System.out.println("Non-recursive test: " + root.contains(15));
         System.out.println("Recursive test: " + root.containsRecursive(15));
 
+        System.out.println("\n\nHEAP TESTING\n");
+        MinHeap minHeap = new MinHeap();
+        
+        int[] numbers = {4, 7, 12, 99, 34, 14, 0, 16, 22, 78, 77, 2, 12, 55, 37};
 
+        for (int i = 0; i < numbers.length; i++) {
+            minHeap.add(numbers[i]);
+        }
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(minHeap.popMin() + " ");
+        }
+        
     }
 }
